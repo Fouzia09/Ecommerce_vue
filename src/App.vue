@@ -1,21 +1,24 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/details">Details</router-link>
-      <router-view />
-
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+     <router-link to="/">Home</router-link> 
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
   </div>
-
+</nav>
+ <router-view />
 </template>
+
 <script>
 
-
-
-export default {
+  export default {
+    components: {
+     
+    },
  
-    
-  
-}
+  }
 </script>
 
 <style>
